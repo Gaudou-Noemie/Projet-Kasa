@@ -4,16 +4,22 @@ import "./header.scss";
 
 function Header() {
   return (
-    <div id="header">
+    <div className="header">
       <img src={Logo} alt="Logo de la société Kasa" />
-      <nav className="header__link">
-        <NavLink className="header__link" to="/" activeClassName="active-link">
+      <nav className="header__nav">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "header__link active-link" : "header__link"
+          }
+        >
           Accueil
         </NavLink>
         <NavLink
-          className="header__link"
           to="/about"
-          activeClassName="active-link"
+          className={({ isActive }) =>
+            isActive ? "header__link active-link" : "header__link"
+          }
         >
           A propos
         </NavLink>

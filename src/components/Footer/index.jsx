@@ -1,10 +1,14 @@
 import Footerlogo from "../../assets/footer-logo.png";
-// import React from "react";
+import "./footer.scss";
 
 function Footer() {
   return (
-    <div>
-      <img src={Footerlogo} alt="Pied de page avec logo" />
+    <div className="footer">
+      <img
+        src={Footerlogo}
+        alt="Pied de page avec logo"
+        className="footer__img"
+      />
     </div>
   );
 }
