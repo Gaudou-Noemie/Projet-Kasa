@@ -1,9 +1,9 @@
+// Création du style du Banner
 @import "../../GlobalStyle/GlobalStyle.scss";
 
 .banner {
   display: flex;
   justify-content: center;
-  max-width: 1240px;
   padding: 30px 50px;
   overflow: hidden;
   position: relative;

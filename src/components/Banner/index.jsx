@@ -1,3 +1,4 @@
+// Création du composant Banner
 import React from "react";
 import "./banner.scss";
 

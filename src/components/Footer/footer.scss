@@ -1,10 +1,22 @@
+// Création du style du Footer
+@import "../../GlobalStyle/GlobalStyle.scss";
+
 .footer {
-  max-width: 1440px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 209px;
+  background-color: black;
+  font-family: $primary-font;
+  font-size: $primary-size;
+  gap:28px;
+  margin-top: 37px;
   &__img {
     height: auto;
-  }
+    }
+    &__p{
+      color:$tertiary-color;
+    }
+
 }

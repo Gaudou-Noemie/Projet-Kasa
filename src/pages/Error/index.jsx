@@ -1,3 +1,4 @@
+// Création de la page Error
 import React from "react";
 import { NavLink } from "react-router-dom";
 import ErrorImg from "../../assets/404.png";

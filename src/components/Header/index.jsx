@@ -1,10 +1,11 @@
+// Création du composant Header
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import "./header.scss";
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header container">
       <img src={Logo} alt="Logo de la société Kasa" />
       <nav className="header__nav">
         <NavLink
@@ -24,7 +25,7 @@ function Header() {
           A propos
         </NavLink>
       </nav>
-    </div>
+    </header>
   );
 }
 export default Header;

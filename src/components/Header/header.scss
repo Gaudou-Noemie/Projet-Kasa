@@ -1,13 +1,12 @@
+// Création du style du Header
 @import "../../GlobalStyle/GlobalStyle.scss";
 
 .header {
-  max-width: 1240px;
   display: flex;
   padding: 30px 50px;
   justify-content: space-between;
   color: $primary-color;
   font-family: $primary-font;
-
   &__nav {
     display: flex;
     align-items: center;
