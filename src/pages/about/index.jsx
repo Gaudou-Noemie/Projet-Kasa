@@ -1,13 +1,9 @@
 import React from "react";
 import AboutImg from "../../assets/img-about.png";
-import "./about.scss";
+import Banner from "../../components/Banner";
 
 function About() {
-  return (
-    <div className="about">
-      <img src={AboutImg} alt="Vue de la montagne." className="about__img" />
-    </div>
-  );
+  return <Banner image={AboutImg} />;
 }
 
 export default About;

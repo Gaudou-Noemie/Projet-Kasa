@@ -1,6 +1,6 @@
 @import "../../GlobalStyle/GlobalStyle.scss";
 
-.home {
+.banner {
   display: flex;
   justify-content: center;
   max-width: 1240px;
@@ -13,7 +13,7 @@
     border-radius: 25px;
     object-fit: cover;
     position: relative;
-    filter: brightness(60%);
+  
   }
   &__text {
     position: absolute;
