@@ -1,0 +1,17 @@
+@import '../../GlobalStyle/GlobalStyle.scss';
+
+.collapse{
+display: flex;
+
+&__desc{
+width: 582px;
+height: 52px;
+display: flex;
+flex-direction: column;
+}
+&__equi{
+width: 582px;
+height: 52px;
+display: flex;
+flex-direction: column;
+}}
