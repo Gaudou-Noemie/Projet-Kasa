@@ -1,0 +1,33 @@
+@import "../../GlobalStyle/GlobalStyle.scss";
+
+
+.fullcard__tags{
+    display: flex;
+    gap: 13px;
+    margin-top: 10px;
+    @media screen and (max-width:768px){
+        gap: 5px;
+    }
+}
+.tags{
+    background-color:$secondary-color ;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    color: $tertiary-color;
+    font-family: $primary-font;
+    font-size: $tertiary-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+
+    @media screen and (max-width:768px) {
+        &{
+            width: 84px;
+            height: 18px;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+    }
+}

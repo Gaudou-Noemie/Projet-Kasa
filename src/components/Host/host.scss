@@ -1,0 +1,41 @@
+@import "../../GlobalStyle/GlobalStyle.scss";
+
+.fullcard__host{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    @media screen and (max-width:768px){
+        margin-top: 9px;
+    }
+}
+
+.host{
+width: 64px;
+height: 64px;
+
+&__p{
+    font-family: $primary-font;
+    font-size: $secondary-size;
+    color: $secondary-color;
+   width: 81px;
+   text-align: right;
+
+}
+
+&__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width:768px){
+    width: 32px;
+height: 32px;
+
+&__p{
+    font-size: $quaternaire-size;
+}
+}}

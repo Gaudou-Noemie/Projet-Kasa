@@ -6,13 +6,17 @@
   display: flex;
   flex-wrap: wrap;
   background: #f6f6f6;
-  width: 1140px;
   border-radius: 25px;
-  margin: auto;
   gap: 27px;
   justify-content: space-evenly;
-  padding: 33px;
-}
+  padding: 41px;
+  margin-top: 40px;
+  @media screen and (max-width:768px) {
+    &{
+      background: none;
+      padding: 0%;
+    }
+}}
 
 .card {
   font-family: $primary-font;
@@ -37,5 +41,11 @@
     top: 79%;
     left: 7%;
     z-index: 2;
+  }
+  @media screen and (max-width:768px) {
+    &{
+width: 335px;
+height: 255px;
+    }
   }
 }

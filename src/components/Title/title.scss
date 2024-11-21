@@ -1,0 +1,28 @@
+@import "../../GlobalStyle/GlobalStyle.scss";
+
+.fullcard__title {
+    font-family: $primary-font;
+    padding-top: 14px;
+    width: 635px;
+    .title {
+      font-weight: 400;
+      color: $secondary-color;
+      font-size: 36px;
+    }
+    .location {
+      font-size: $secondary-size;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 768px){
+      &{
+        width: 335px;
+        padding-top: 0%;
+      }
+      .title{
+        font-size: $secondary-size;
+      }
+      .location{
+        font-size: $tertiary-size;
+      }
+    }
+  }

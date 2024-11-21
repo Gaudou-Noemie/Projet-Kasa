@@ -18,5 +18,12 @@
     &__p{
       color:$tertiary-color;
     }
+    @media screen and (max-width:768px) {
+      &{gap:12px}
+      &__p{
+        font-size: $quaternaire-size;
+        width: 100px;
+      }
+    }
 
 }

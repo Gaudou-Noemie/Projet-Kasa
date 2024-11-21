@@ -4,7 +4,6 @@
 .banner {
   display: flex;
   justify-content: center;
-  padding: 30px 50px;
   overflow: hidden;
   position: relative;
   &__img {
@@ -25,6 +24,15 @@
     z-index: 2;
     font-size: 48px;
     font-family: $primary-font;
+    font-weight: 600;
   }
-
+@media screen and (max-width:768px){
+  &__img{
+height: 111px;
+  }
+  &__text{
+    font-size: $primary-size;
+    width: 225px;
+  }
+}
 }

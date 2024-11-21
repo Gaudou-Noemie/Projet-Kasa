@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./collapse.scss";
 
-function Collapse({ title, children, id }) {
+function Collapse({ title, children, className }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -11,7 +11,7 @@ function Collapse({ title, children, id }) {
   };
 
   return (
-    <div id={id} className="collapse">
+    <div className={`collapse ${className}`}>
       <div className="collapse__header" onClick={toggleCollapse}>
         <h3 className="collapse__title">{title}</h3>
         <span
