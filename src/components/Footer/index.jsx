@@ -1,4 +1,4 @@
-// Création du composant Footer
+// Fonction qui crée le composant Footer
 
 import Footerlogo from "../../assets/logo-footer.png";
 import "./footer.scss";

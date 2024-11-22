@@ -1,0 +1,15 @@
+// Style pour le composant Rating
+.rating__img {
+    width: 36px;
+ } 
+@media screen and (max-width:768px){
+    .rating__img{
+    width: 18px;    
+    } 
+    .starDiv{
+        margin-top: 10px;
+    }
+}
+ 
+
+

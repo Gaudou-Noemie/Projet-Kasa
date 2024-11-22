@@ -1,19 +1,32 @@
+// Style du composant FullCard
 @import "../../GlobalStyle/GlobalStyle.scss";
 
 .fullcard{
   display: flex;
 align-items: center;
   justify-content: space-between;
-  @media screen and (max-width:768px) {
-    flex-direction: column;
-    align-items: flex-end;
-    
-  }
-
+  margin-top: 21px;
+    &__info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 &__titre{
   display: flex;
  flex-direction: column;
-}}
+}
+@media screen and (max-width:768px) {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 0%;
+
+  &__info{
+    flex-direction: row-reverse;
+    width: 335px;
+    justify-content: space-between;
+  }
+  }
+}
 
 .collapse__detail {
   display: flex;

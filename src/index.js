@@ -1,4 +1,4 @@
-// Création de toutes les routes du Site 
+// Création de toutes les routes du Site pour le site internet
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

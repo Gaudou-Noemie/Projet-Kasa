@@ -1,5 +1,5 @@
+//  Style pour le composant Tags
 @import "../../GlobalStyle/GlobalStyle.scss";
-
 
 .fullcard__tags{
     display: flex;
@@ -12,7 +12,7 @@
 .tags{
     background-color:$secondary-color ;
     border-radius: 10px;
-    width: 115px;
+    min-width: 115px;
     height: 25px;
     color: $tertiary-color;
     font-family: $primary-font;
@@ -21,10 +21,10 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
-
+    padding: 2px;
     @media screen and (max-width:768px) {
         &{
-            width: 84px;
+            min-width: 80px;
             height: 18px;
             border-radius: 5px;
             font-size: 10px;

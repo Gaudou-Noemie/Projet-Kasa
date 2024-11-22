@@ -1,4 +1,4 @@
-// Création du composant Header
+// Fonction qui crée le composant Header
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import LogoMobile from "../../assets/logo-mobile.png";

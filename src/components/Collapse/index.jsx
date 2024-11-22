@@ -1,4 +1,4 @@
-// Création du composant collapse
+// Fonction qui crée le composant Collapse
 
 import { useState } from "react";
 import "./collapse.scss";

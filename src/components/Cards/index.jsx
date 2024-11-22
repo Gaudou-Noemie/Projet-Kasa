@@ -1,4 +1,4 @@
-// Création du composant Cards
+// Fonction qui crée le composant Cards
 
 import datas from "../../Data/Data";
 import "./cards.scss";

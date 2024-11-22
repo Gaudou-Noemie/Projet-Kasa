@@ -1,4 +1,4 @@
-// Création du carousel
+// Fonction qui crée le composant Carousel
 import React, { useState } from "react";
 import "./carousel.scss";
 
@@ -22,19 +22,36 @@ function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <button className="carousel__prev" onClick={prevImage}>
-        <i className="fa-solid fa-chevron-left"></i>
-      </button>
-      <div className="carousel__slide">
-        <img
-          src={pictures[currenIndex]}
-          alt={`Slide ${currenIndex + 1}`}
-          className="carousel__img"
-        />
-      </div>
-      <button className="carousel__next" onClick={nextImage}>
-        <i className="fa-solid fa-chevron-right"></i>
-      </button>
+      {pictures.length > 1 && (
+        <>
+          <button className="carousel__prev" onClick={prevImage}>
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
+          <div className="carousel__slide">
+            <img
+              src={pictures[currenIndex]}
+              alt={`Slide ${currenIndex + 1}`}
+              className="carousel__img"
+            />
+            <div className="carousel__number">
+              {currenIndex + 1}/{pictures.length}
+            </div>
+          </div>
+          <button className="carousel__next" onClick={nextImage}>
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        </>
+      )}
+
+      {pictures.length === 1 && (
+        <div className="carousel__slide">
+          <img
+            src={pictures[currenIndex]}
+            alt={`Slide ${currenIndex + 1}`}
+            className="carousel__img"
+          />
+        </div>
+      )}
     </div>
   );
 }

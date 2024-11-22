@@ -1,4 +1,4 @@
-// Création du style du carousel
+// Style du composant Carousel
 @import "../../GlobalStyle/GlobalStyle.scss";
 
 .carousel {
@@ -18,6 +18,16 @@
     z-index: 0;
     object-fit: cover;
   }
+  &__number{
+    position: absolute;
+    z-index: 1;
+    color: $tertiary-color;
+    left: 50%;
+    bottom: 5%;
+    font-family: $primary-font;
+    font-size: $secondary-size;
+
+  }
   &__next,
   &__prev {
     background: transparent;
@@ -33,24 +43,19 @@
   &__next {
     left: 94%;
   }
-
   &__prev {
     right: 94%;
   }
+
   @media screen and (max-width: 768px) {
     margin-top: 0%;
     width: 335px;
     height: 255px;
- 
   &__next{
     font-size: 1rem;
-    // left: 93%
-   
   }
   &__prev{
     font-size:1rem;
-  //  right: 93%
-   
   }
   &__img{
     border-radius: 10px;

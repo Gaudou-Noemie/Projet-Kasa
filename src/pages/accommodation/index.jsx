@@ -1,4 +1,4 @@
-// Création de la page Accommodation
+// La page Accommodation avec la fonction Accommodation qui retourne la fonction FullCard
 
 import FullCard from "../../components/FullCard";
 import React from "react";

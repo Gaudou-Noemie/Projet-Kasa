@@ -1,3 +1,4 @@
+// Fonction qui crée un composant Host
 import "./host.scss";
 
 function Host({ name, picture }) {

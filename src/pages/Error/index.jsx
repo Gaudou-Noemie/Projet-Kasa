@@ -1,4 +1,4 @@
-// Création de la page Error
+// La page Error avec la fonction Error qui retourne une image, un text d'erreur et un lien pour retourner a la page Home
 import React from "react";
 import { NavLink } from "react-router-dom";
 import ErrorImg from "../../assets/404.png";
@@ -19,7 +19,10 @@ function Error() {
         className="error__mobile"
       />
 
-      <p className="error__p">Oups! La page que vous demandez n'existe pas.</p>
+      <p className="error__p">
+        Oups! La page que
+        <br className="error__leap" /> vous demandez n'existe pas.
+      </p>
       <NavLink to="/" className="error__link">
         Retourner à la page d'accueil
       </NavLink>

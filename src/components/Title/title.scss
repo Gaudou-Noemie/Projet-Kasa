@@ -1,3 +1,4 @@
+// Style pour le composant Titre
 @import "../../GlobalStyle/GlobalStyle.scss";
 
 .fullcard__title {
@@ -5,13 +6,13 @@
     padding-top: 14px;
     width: 635px;
     .title {
-      font-weight: 400;
+      font-weight: 500;
       color: $secondary-color;
       font-size: 36px;
     }
     .location {
       font-size: $secondary-size;
-      font-weight: 400;
+      font-weight: 500;
     }
     @media screen and (max-width: 768px){
       &{

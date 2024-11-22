@@ -1,3 +1,4 @@
+// Fonction qui crée un composant "Title"
 function Title({ title, location }) {
   return (
     <div className="fullcard__title">

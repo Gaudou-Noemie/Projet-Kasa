@@ -15,14 +15,16 @@
     margin: 80px;
     display: block;
   }
-  &__mobile{
+  &__mobile {
     display: none;
   }
   &__p {
     font-size: 36px;
-    margin: 60px auto;
+    margin: 60px;
   }
-
+  &__leap {
+    display: none;
+  }
   &__link {
     margin-top: 30px;
     font-size: $secondary-size;
@@ -31,19 +33,23 @@
     text-underline-offset: 4px;
     margin-bottom: 60px;
   }
-  @media screen and (max-width:768px){
-    &__img{
+  @media screen and (max-width: 768px) {
+    &__img {
       display: none;
     }
-    &__mobile{
+    &__mobile {
       display: block;
     }
-    &__p{
+    &__p {
       font-size: $secondary-size;
       text-align: center;
+      width: 260px;
     }
-    &__link{
+    &__link {
       font-size: $tertiary-size;
+    }
+    &__leap {
+      display: block;
     }
   }
 }

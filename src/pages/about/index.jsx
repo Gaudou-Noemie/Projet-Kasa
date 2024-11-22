@@ -1,4 +1,4 @@
-// Création de la page A Propos
+// La page A Propos avec la fonction About qui retourne la fonction Banner et Collapse
 
 import React from "react";
 import AboutImg from "../../assets/img-about.png";

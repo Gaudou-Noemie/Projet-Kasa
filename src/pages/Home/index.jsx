@@ -1,4 +1,4 @@
-// Création de la page Home
+// La page Home avec la fonction Home qui retourne la fonction Banner et Cards
 import React from "react";
 import HomeImg from "../../assets/img-accueil.png";
 import Banner from "../../components/Banner";

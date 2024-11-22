@@ -1,3 +1,4 @@
+// Fonction qui crée un composant Tags
 import "./tags.scss";
 
 function Tags({ tags }) {
