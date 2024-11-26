@@ -20,7 +20,13 @@ function Collapse({ title, children, className }) {
           <i className="fa-solid fa-chevron-up collapse__icon"></i>
         </span>
       </div>
-      {isOpen && <div className="collapse__content">{children}</div>}
+      <div
+        className={`collapse__content ${
+          isOpen ? "" : "collapse__content-close"
+        } `}
+      >
+        {children}
+      </div>
     </div>
   );
 }

@@ -22,7 +22,7 @@ align-items: center;
 
   &__info{
     flex-direction: row-reverse;
-    width: 335px;
+    width: 339px;
     justify-content: space-between;
   }
   }
@@ -34,6 +34,11 @@ align-items: center;
   margin-top: 20px;
   gap: 29px;
 
+  .collapse-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  } 
   .collapse__desc {
     display: flex;
     flex-direction: column;

@@ -47,16 +47,20 @@ function FullCard() {
           </div>
         </div>
         <div className="collapse__detail">
-          <Collapse className="collapse__desc" title="Description">
-            <p>{logement.description}</p>
-          </Collapse>
-          <Collapse className="collapse__equi" title="Équipements">
-            <ul>
-              {logement.equipments.map((equipments, index) => (
-                <li key={index}>{equipments}</li>
-              ))}
-            </ul>
-          </Collapse>
+          <div className="collapse-wrapper">
+            <Collapse className="collapse__desc" title="Description">
+              <p>{logement.description}</p>
+            </Collapse>
+          </div>
+          <div className="collapse-wrapper">
+            <Collapse className="collapse__equi" title="Équipements">
+              <ul>
+                {logement.equipments.map((equipments, index) => (
+                  <li key={index}>{equipments}</li>
+                ))}
+              </ul>
+            </Collapse>
+          </div>
         </div>
       </div>
     );
